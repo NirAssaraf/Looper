@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+.title{
+
+    font-family: 'Monoton', cursive;
+    font-size: 7rem;
+    color:ghostwhite;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+@keyframes loop {
+  
+    0%  { color:ghostwhite ; }
+    12.5%   { color:rgb(245, 94, 94) ; }
+    25%   { color:rgb(242, 152, 79) ; }
+    37.5%   { color:rgb(247, 214, 67) ; }
+    50%   { color:rgb(193, 247, 67) ; }
+    62.5% { color:rgb(51, 244, 199) ; }
+    75%  { color:rgb(61, 126, 237) ; }
+    87.5%  { color:rgb(169, 61, 245) ; }
+    100% { color:rgb(210, 49, 242) ; }
+
+
+  }
+.title-play{
+
+    font-family: 'Monoton', cursive;
+    font-size: 7rem;
+    color:ghostwhite;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    animation: loop 8s linear infinite;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .title{
+
+        font-family: 'Monoton', cursive;
+        font-size: 4rem;
+        color:ghostwhite;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    } 
+    .title-play{
+
+        font-family: 'Monoton', cursive;
+        font-size: 4rem;
+        color:ghostwhite;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        animation: loop 8s linear infinite;
+    
+    } 
+}

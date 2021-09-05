@@ -1,0 +1,87 @@
+#start-record-btn{
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 50px;
+    margin-left: 30px;
+
+}
+@keyframes record {
+  
+    100%  {background-size: 120% ; }
+
+
+
+  }
+.record-btn{
+    display: flex;
+    position: absolute;
+    top: 235px;
+    margin-left: 65px;
+}
+.record-video{
+    position: absolute;
+    left: -730px;
+    top: 132px;
+    border: #ffffff 5px solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+}
+#stop-record-btn{
+    animation: record 1s backwards infinite reverse;
+    border: 5px white solid;
+    display: block;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 0px;
+    display: block;
+background-color: transparent;
+    border-radius: 100px;
+    color: #e04040;
+    background: url('https://api.iconify.design/entypo/controller-record.svg?color=%23e04040') no-repeat center center / contain;
+}
+#stop-record-btn-noanim{
+    border: 5px white solid;
+    display: block;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 0px;
+    display: block;
+background-color: transparent;
+    border-radius: 100px;
+    color: #e04040;
+    background: url('https://api.iconify.design/entypo/controller-record.svg?color=%23e04040') no-repeat center center / contain;
+}
+#pause-record-btn{
+    color: white;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+}
+#resume-record-btn{
+    color: green;
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+
+}
+@media only screen and (max-width: 768px) {
+    .record-btn{
+        display: flex;
+        position: absolute;
+        top: 140px;
+        margin-left: 50px;
+    }
+    .record-video{
+        position: absolute;
+        left: -245px;
+        top: 509px;
+        border: #ffffff 5px solid;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+    }
+}

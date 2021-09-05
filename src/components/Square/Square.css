@@ -1,0 +1,28 @@
+.on{
+
+    background-color:rgb(219, 171, 109);
+
+}
+
+.off{
+    background-color:rgba(165, 42, 42, 0.5);
+}
+.square{
+    width: 150px;
+    height: 150px;
+    font-size: 16px;
+    color: white;
+    border: white 3px solid;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .square{
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+        color: white;
+        border: white 3px solid;
+        border-radius: 10px;
+        z-index: 11;
+    }  
+}

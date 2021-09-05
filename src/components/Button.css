@@ -1,0 +1,87 @@
+body {
+    background-color: #333;
+  }
+  
+  .play-btn {
+      display: block;
+      position: relative;
+      width: 60px;
+      height: 60px;
+      text-indent: 100%;
+      overflow: hidden;
+      border: 4px solid #fff;
+      border-radius: 100%;
+      transition: background-color .3s;
+  }
+  
+  .play-btn:before,
+  .play-btn:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  .play-btn:before {
+      width: 0;
+      height: 0;
+      margin-left: 3px;
+      border-color: transparent;
+      border-left-color: #fff;
+      border-width: 10px 0 10px 14px;
+      border-style: solid;
+  }
+  
+  .play-btn:hover:not(.is-loading) {
+      background-color: #fff;
+  }
+  
+  .play-btn:hover:before {
+      border-left-color: #333;
+  }
+  
+  .is-playing:before,
+  .is-playing:after {
+      width: 5px;
+      height: 18px;
+      background-color: #fff;
+  }
+  
+  .is-playing:before {
+      border: none;
+      margin-left: -5px;
+  }
+  
+  .is-playing:after {
+      margin-left: 5px;
+  }
+  
+  .is-playing:hover:before,
+  .is-playing:hover:after {
+      background-color: #333;
+  }
+  
+  .is-loading:before {
+      display: none;
+  }
+  
+  .is-loading:after {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 100%;
+      animation: .5s infinite alternate loading;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+  
+  @keyframes loading {
+      0% {width: 0; height: 0;}
+      100% {width: 100%; height: 100%;}
+  }
